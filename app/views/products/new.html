@@ -1,7 +1,0 @@
-<%= form_for Product.new do |form| %>
-  <%= form.label :name %>
-  <%= form.text_field :name %>
-  <%= form.label :category %>
-  <%= form.select :category, options_for_select(Product.categories.keys.collect{|category|[category.humanize, category]}) %>
-  <%= form.submit "Create Product" %>
-<%end%>
